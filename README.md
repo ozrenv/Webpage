@@ -1,6 +1,7 @@
 # Wepage depository
 
-![MyDigitalCV](static/images/Website%20portfolio.png)
+<img src="static/images/Website%20portfolio.png" alt="MyDigitalCV" width="400" />
+
 Digital resume powered by Django.
 
 ## Overview
