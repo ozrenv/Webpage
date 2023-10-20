@@ -316,11 +316,11 @@ a, .btn {
 .progress.progressStyle {
 	height: 8px;
 	padding: 1px;
-	background-color: var(--secondaryColor);
+	background-color: #e459ee;
 	border-radius: 3px;
 }
 .progressStyle .progress-bar {
-	background-color: #fff;
+	background-color: #4d1acd;
 	border-radius: 3px;
 }
 .progressCol + .progressCol {
