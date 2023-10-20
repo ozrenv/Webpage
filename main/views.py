@@ -5,7 +5,8 @@ from .models import (
 		Blog,
 		Portfolio,
 		Testimonial,
-		Certificate
+		Certificate,
+		Skill
 	)
 
 from django.views import generic
@@ -24,11 +25,13 @@ class IndexView(generic.TemplateView):
 		certificates = Certificate.objects.filter(is_active=True)
 		blogs = Blog.objects.filter(is_active=True)
 		portfolio = Portfolio.objects.filter(is_active=True)
+		skills = Skill.objects.filter(is_active=True)
 		
 		context["testimonials"] = testimonials
 		context["certificates"] = certificates
 		context["blogs"] = blogs
 		context["portfolio"] = portfolio
+		context["skills"] = skills
 		return context
 
 
@@ -39,7 +42,7 @@ class ContactView(generic.FormView):
 	
 	def form_valid(self, form):
 		form.save()
-		messages.success(self.request, 'Thank you. We will be in touch soon.')
+		messages.success(self.request, 'Thank you. I will be in touch soon.')
 		return super().form_valid(form)
 
 

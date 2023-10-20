@@ -1,5 +1,4 @@
 from django.contrib import admin
-
 from . models import (
     UserProfile,
     ContactProfile,
@@ -7,8 +6,8 @@ from . models import (
     Media,
     Portfolio,
     Blog,
-    Skill,
-    Certificate
+    Certificate,
+    Skill
     )
 
 
@@ -38,11 +37,10 @@ class BlogAdmin(admin.ModelAdmin):
     list_display = ('id','name','is_active')
     readonly_fields = ('slug',)
 
+@admin.register(Certificate)
+class CertificateAdmin(admin.ModelAdmin):
+    list_display = ('id','name')
 
 @admin.register(Skill)
 class SkillAdmin(admin.ModelAdmin):
     list_display = ('id','name','score')
-    
-@admin.register(Certificate)
-class CertificateAdmin(admin.ModelAdmin):
-    list_display = ('id','name')
