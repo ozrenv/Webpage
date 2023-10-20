@@ -1,6 +1,6 @@
 # Wepage depository
 
-<img src="static/images/Website%20portfolio.png" alt="MyDigitalCV" width="300" />
+<img src="static/images/Website%20portfolio.png" alt="MyDigitalCV" width="500" />
 
 
 
