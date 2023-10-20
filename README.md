@@ -1,6 +1,6 @@
 # Wepage depository
 
-![MyDigitalCV](static/images/Website portfolio.png)
+![MyDigitalCV](static/images/Website%20portfolio.png)
 Digital resume powered by Django.
 
 ## Overview
