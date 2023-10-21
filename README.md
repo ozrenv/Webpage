@@ -4,7 +4,7 @@
 
 
 
-Digital resume powered by Django.
+Digital resume powered by Django. (https://djangowebpage-5947f1031e72.herokuapp.com/)
 
 ## Overview
 
